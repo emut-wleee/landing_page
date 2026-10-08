@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Menu — Selimut Awan</title>
+<meta name="description" content="Pilih dulu, tambahkan ke pesanan, lalu kirim lewat WhatsApp. Gampang.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="pages.css">
+</head>
+<body>
+<span class="bg-shape s1" aria-hidden="true"></span>
+<span class="bg-shape s2" aria-hidden="true"></span>
+<div class="page">
+  <header>
+    <a class="brand" href="index.html" aria-label="Selimut Awan, kembali ke beranda">
+      <svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="24" fill="#1b1340"/><path d="M13 20h20v9a10 10 0 0 1-20 0z" fill="#ffd23f"/><path d="M33 22h3a4 4 0 0 1 0 8h-3" fill="none" stroke="#ffd23f" stroke-width="3" stroke-linecap="round"/><circle cx="20" cy="28" r="1.8" fill="#1b1340"/><circle cx="27" cy="28" r="1.8" fill="#1b1340"/></svg>
+      <span>Selimut Awan</span>
+    </a>
+    <button class="burger" id="burger" aria-label="Buka menu navigasi" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span></button>
+    <nav id="nav" aria-label="Navigasi utama"><a href="tentang.html">Tentang</a><a href="menu.html" aria-current="page">Menu</a><a href="galeri.html">Galeri</a><a href="lokasi.html">Lokasi</a><a href="kontak.html">Kontak</a></nav>
+  </header>
+  <main class="inner">
+    <div class="wrap phero">
+      <div>
+        <p class="sticker rise">dari yang pahit sampai yang manis</p>
+        <h1 class="rise" style="--d:.08s">Mau pesan apa hari ini?</h1>
+        <p class="lead rise" style="--d:.16s">Pilih dulu, tambahkan ke pesanan, lalu kirim lewat WhatsApp. Gampang.</p>
+      </div>
+      <svg class="mascot" viewBox="0 0 200 200" aria-hidden="true">
+<g class="steam" fill="none" stroke="#1b1340" stroke-width="5" stroke-linecap="round" opacity=".55"><path d="M82 46q-8-10 0-20t0-18"/><path d="M108 44q-8-10 0-20t0-18" style="animation-delay:.8s"/></g>
+<ellipse cx="100" cy="182" rx="66" ry="8" fill="#1b1340" opacity=".18"/>
+<path d="M150 100q36 0 36 26t-38 26" fill="none" stroke="#1b1340" stroke-width="18" stroke-linecap="round"/>
+<path d="M150 100q36 0 36 26t-38 26" fill="none" stroke="#f04a3a" stroke-width="9" stroke-linecap="round"/>
+<path d="M48 82h104v46q0 46-52 46t-52-46z" fill="#f04a3a" stroke="#1b1340" stroke-width="4" stroke-linejoin="round"/>
+<ellipse cx="100" cy="82" rx="52" ry="11" fill="#5a2e22" stroke="#1b1340" stroke-width="4"/>
+<g class="eye"><circle cx="80" cy="128" r="11" fill="#fff" stroke="#1b1340" stroke-width="3"/><circle cx="82" cy="129" r="5" fill="#1b1340"/></g>
+<g class="eye"><circle cx="120" cy="128" r="11" fill="#fff" stroke="#1b1340" stroke-width="3"/><circle cx="122" cy="129" r="5" fill="#1b1340"/></g>
+<circle cx="66" cy="148" r="6" fill="#ff9fb0"/><circle cx="134" cy="148" r="6" fill="#ff9fb0"/>
+<path d="M89 147q11 18 22 0z" fill="#1b1340"/></svg>
+    </div>
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<symbol id="i-kopi" viewBox="0 0 48 48"><g fill="#fff" stroke="#1b1340" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h24v10a12 12 0 0 1-24 0z"/><path d="M33 21h3a5 5 0 0 1 0 10h-3" fill="none"/><path d="M16 8q-3 3 0 6M24 8q-3 3 0 6" fill="none"/></g></symbol>
+<symbol id="i-non" viewBox="0 0 48 48"><g fill="#fff" stroke="#1b1340" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M12 14h24l-3 27H15z"/><path d="M26 14l5-9M14 24h20" fill="none"/></g></symbol>
+<symbol id="i-makan" viewBox="0 0 48 48"><g fill="#fff" stroke="#1b1340" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M6 24h36a18 14 0 0 1-36 0z"/><path d="M17 12q-3 3 0 6M25 10q-3 3 0 6M33 12q-3 3 0 6" fill="none"/></g></symbol>
+<symbol id="i-camilan" viewBox="0 0 48 48"><g fill="#fff" stroke="#1b1340" stroke-width="3" stroke-linecap="round"><circle cx="24" cy="26" r="16"/><g fill="#1b1340" stroke="none"><circle cx="18" cy="22" r="2.2"/><circle cx="28" cy="20" r="2.2"/><circle cx="26" cy="31" r="2.2"/><circle cx="17" cy="32" r="2.2"/></g></g></symbol>
+</defs></svg>
+    <section class="section"><div class="wrap">
+      <div class="tabs" role="group" aria-label="Kategori menu">
+        <button class="tab" data-cat="semua" aria-pressed="true">Semua</button>
+        <button class="tab" data-cat="kopi" aria-pressed="false">Kopi</button>
+        <button class="tab" data-cat="non" aria-pressed="false">Non-kopi</button>
+        <button class="tab" data-cat="makan" aria-pressed="false">Makanan</button>
+        <button class="tab" data-cat="camilan" aria-pressed="false">Camilan</button>
+      </div>
+      <div class="menu-grid" id="menuGrid"></div>
+    </div></section>
+  </main>
+  <div class="marquee" aria-hidden="true"><div class="track"><div class="group">
+      <span>kopi susu gula aren</span><i>✦</i><span>croissant hangat</span><i>✦</i><span>wifi kencang</span><i>✦</i><span>colokan di mana-mana</span><i>✦</i><span>bebas ngobrol</span><i>✦</i>
+    </div></div></div>
+<footer class="foot"><div class="wrap">
+  <div class="foot-in">
+    <div><b>Selimut Awan</b><p>Ngopi santai, tanpa ribet.<br>Datang sendiri atau ramai-ramai, semua boleh.</p></div>
+    <div><b>Jelajah</b><a href="index.html">Beranda</a><a href="tentang.html">Tentang</a><a href="menu.html">Menu</a><a href="galeri.html">Galeri</a><a href="lokasi.html">Lokasi</a><a href="kontak.html">Kontak</a></div>
+    <div><b>Mampir</b><p>Setiap hari<br>08.00 – 22.00</p></div>
+  </div>
+  <p class="copy-line">© 2026 Selimut Awan. Dibuat dengan kopi dan sedikit gula.</p>
+</div></footer>
+</div>
+<div class="orderbar" id="orderbar"><span><b id="obCount">0 item</b> &nbsp;·&nbsp; <span id="obTotal">Rp 0</span></span><button class="btn" id="openOrder">Lihat pesanan</button></div>
+<dialog id="orderDlg" aria-labelledby="dlgTitle">
+  <h2 id="dlgTitle">Pesananmu</h2>
+  <ul class="lines" id="lines"></ul>
+  <div class="total"><span>Total</span><span id="dlgTotal">Rp 0</span></div>
+  <div class="field"><label for="who">Atas nama atau nomor meja (boleh dikosongkan)</label><input id="who" type="text" autocomplete="name"></div>
+  <div class="dlg-actions">
+    <a class="btn big" id="sendWA" href="#" target="_blank" rel="noopener">Kirim lewat WhatsApp</a>
+    <button class="btn alt" id="clearOrder">Kosongkan</button>
+    <button class="btn alt" id="closeDlg">Tutup</button>
+  </div>
+</dialog>
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Selimut Awan — Ngopi Santai</title>
+<meta name="description" content="Selimut Awan, cafe santai untuk kerja, nongkrong, dan ngopi tanpa ribet.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<span class="bg-shape s1" aria-hidden="true"></span>
+<span class="bg-shape s2" aria-hidden="true"></span>
+
+<div class="page" id="page">
+  <header>
+    <a class="brand" href="#beranda" aria-label="Selimut Awan, ke bagian atas">
+      <svg viewBox="0 0 48 48" aria-hidden="true">
+        <circle cx="24" cy="24" r="24" fill="#1b1340"/>
+        <path d="M13 20h20v9a10 10 0 0 1-20 0z" fill="#ffd23f"/>
+        <path d="M33 22h3a4 4 0 0 1 0 8h-3" fill="none" stroke="#ffd23f" stroke-width="3" stroke-linecap="round"/>
+        <circle cx="20" cy="28" r="1.8" fill="#1b1340"/><circle cx="27" cy="28" r="1.8" fill="#1b1340"/>
+      </svg>
+      <span>Selimut Awan</span>
+    </a>
+    <button class="burger" id="burger" aria-label="Buka menu navigasi" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span></button>
+    <nav id="nav" aria-label="Navigasi utama"><a href="#tentang">Tentang</a><a href="#menu">Menu</a><a href="#galeri">Galeri</a><a href="#lokasi">Lokasi</a><a href="#kontak">Kontak</a></nav>
+  </header>
+
+  <main>
+    <section id="beranda" aria-label="Beranda"><div class="hero">
+    <section class="copy">
+      <p class="sticker">cafe santai buat siapa saja</p>
+      <h1>Halo,<br><span>ngopi yuk!</span></h1>
+      <p class="lead">Tempat buat kerja, nongkrong, atau sekadar diam sambil nyeruput. Kursi empuk, kopi hangat, tanpa ribet.</p>
+      <a class="cta" id="cta" href="#menu">Lihat menu
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+      <p class="hours" id="hours" role="status"><span class="dot"></span><span id="hoursText">Buka setiap hari, 08.00 – 22.00</span></p>
+    </section>
+
+    <section class="stage" aria-label="Si cangkir dan teman-temannya">
+      <div class="badge" aria-hidden="true">
+        <svg viewBox="0 0 120 120">
+          <circle cx="60" cy="60" r="58" fill="#ffd23f" stroke="#1b1340" stroke-width="3"/>
+          <path id="ring" d="M60,60 m-41,0 a41,41 0 1,1 82,0 a41,41 0 1,1 -82,0" fill="none"/>
+          <text font-size="12.5" font-weight="600" fill="#1b1340"><textPath href="#ring" textLength="252" lengthAdjust="spacing">buka tiap hari • 08.00 – 22.00 •</textPath></text>
+          <path d="M60 44c1.6 9 4 11.4 14 16-10 4.6-12.4 7-14 16-1.6-9-4-11.4-14-16 10-4.6 12.4-7 14-16z" fill="#1b1340"/>
+        </svg>
+      </div>
+
+      <div class="bubble pop" id="bubble" aria-live="polite">Hai! Colek aku, dong.</div>
+
+      <svg class="chars" viewBox="0 0 480 480" aria-hidden="false">
+        <defs><path id="spark" d="M0-14C2-4 4-2 14 0 4 2 2 4 0 14-2 4-4 2-14 0-4-2-2-4 0-14z"/></defs>
+        <use href="#spark" transform="translate(64 170) scale(.8)" fill="#ffd23f"/>
+        <use href="#spark" transform="translate(436 360) scale(.6)" fill="#5ee0b8"/>
+        <use href="#spark" transform="translate(300 60) scale(.5)" fill="#b69cff"/>
+
+        <!-- Donat -->
+        <g class="donut">
+          <circle cx="400" cy="130" r="44" fill="#ff8fc7"/>
+          <circle cx="400" cy="130" r="15" fill="#1b1340"/>
+          <g fill="#ffd23f"><rect x="370" y="112" width="9" height="3.5" rx="1.7" transform="rotate(-30 374 114)"/><rect x="422" y="150" width="9" height="3.5" rx="1.7" transform="rotate(35 426 152)"/></g>
+          <g fill="#5ee0b8"><rect x="428" y="116" width="9" height="3.5" rx="1.7" transform="rotate(50 432 118)"/><rect x="380" y="152" width="9" height="3.5" rx="1.7" transform="rotate(-50 384 154)"/></g>
+          <circle cx="388" cy="102" r="3.5" fill="#1b1340"/><circle cx="412" cy="102" r="3.5" fill="#1b1340"/>
+          <path d="M392 158q8 7 16 0" fill="none" stroke="#1b1340" stroke-width="3" stroke-linecap="round"/>
+        </g>
+
+        <!-- Cangkir -->
+        <g class="cup" id="cup" role="button" tabindex="0" aria-label="Colek si cangkir">
+          <g class="cup-body" id="cupBody">
+            <ellipse cx="240" cy="366" rx="125" ry="16" fill="#5ee0b8"/>
+            <g class="steam" fill="none" stroke="#fff4df" stroke-width="8" stroke-linecap="round">
+              <path d="M205 165q-14-18 0-36t0-34"/><path d="M240 160q-14-18 0-36t0-34" style="animation-delay:.7s"/><path d="M275 165q-14-18 0-36t0-34" style="animation-delay:1.4s"/>
+            </g>
+            <path d="M330 215q62 0 62 48t-70 50" fill="none" stroke="#f04a3a" stroke-width="16" stroke-linecap="round"/>
+            <path d="M150 190h180v90q0 80-90 80t-90-80z" fill="#f04a3a"/>
+            <ellipse cx="240" cy="190" rx="90" ry="18" fill="#5a2e22" stroke="#fff4df" stroke-width="6"/>
+            <g class="wave"><path d="M152 272q-34-16-42-56" fill="none" stroke="#f04a3a" stroke-width="14" stroke-linecap="round"/><circle cx="110" cy="212" r="12" fill="#f04a3a"/></g>
+            <g class="eye"><circle cx="205" cy="262" r="17" fill="#fff"/><circle class="pupil" cx="205" cy="262" r="8" fill="#1b1340"/></g>
+            <g class="eye"><circle cx="275" cy="262" r="17" fill="#fff"/><circle class="pupil" cx="275" cy="262" r="8" fill="#1b1340"/></g>
+            <circle cx="184" cy="297" r="9" fill="#ff9fb0" opacity=".85"/><circle cx="296" cy="297" r="9" fill="#ff9fb0" opacity=".85"/>
+            <path d="M222 291q18 32 36 0z" fill="#1b1340"/><path d="M232 303q8 6 16 0" fill="#ff8fa3"/>
+          </g>
+        </g>
+
+        <!-- Croissant -->
+        <g class="croissant" transform="translate(0 85) scale(.85)">
+          <path d="M30 390C30 330 90 310 125 330 160 310 220 330 220 390 195 372 175 380 160 392 145 375 105 375 90 392 75 380 55 372 30 390z" fill="#ffb347"/>
+          <path d="M70 330q5 25 20 45M125 322v44M180 332q-8 23-20 43" fill="none" stroke="#d9822b" stroke-width="4" stroke-linecap="round"/>
+          <circle cx="104" cy="352" r="4.5" fill="#1b1340"/><circle cx="146" cy="352" r="4.5" fill="#1b1340"/>
+          <path d="M113 362q12 10 24 0" fill="none" stroke="#1b1340" stroke-width="3.5" stroke-linecap="round"/>
+        </g>
+      </svg>
+    </section>
+  </div></section>
+    <div class="marquee" aria-hidden="true"><div class="track"><div class="group">
+      <span>kopi susu gula aren</span><i>✦</i><span>croissant hangat</span><i>✦</i><span>wifi kencang</span><i>✦</i><span>colokan di mana-mana</span><i>✦</i><span>bebas ngobrol</span><i>✦</i>
+    </div></div></div>
+
+<section class="panel" id="tentang" aria-labelledby="t-tentang">
+    <div class="wrap phero">
+      <div>
+        <p class="sticker rise">kenalan dulu, yuk</p>
+        <h2 class="ptitle rise" id="t-tentang" style="--d:.08s">Cerita di balik cangkir.</h2>
+        <p class="lead rise" style="--d:.16s">Tempat kecil dengan niat sederhana: bikin orang betah duduk lama.</p>
+      </div>
+      <svg class="mascot" viewBox="0 0 200 200" aria-hidden="true">
+<ellipse cx="100" cy="170" rx="80" ry="8" fill="#1b1340" opacity=".18"/>
+<path d="M14 150C14 90 74 66 100 88 126 66 186 90 186 150 164 132 146 140 132 154 118 136 82 136 68 154 54 140 36 132 14 150z" fill="#ffb347" stroke="#1b1340" stroke-width="4" stroke-linejoin="round"/>
+<path d="M52 88q6 26 20 46M100 80v50M148 88q-8 24-20 44" fill="none" stroke="#d9822b" stroke-width="4" stroke-linecap="round"/>
+<g class="eye"><circle cx="82" cy="108" r="5" fill="#1b1340"/></g><g class="eye"><circle cx="118" cy="108" r="5" fill="#1b1340"/></g>
+<path d="M90 120q10 10 20 0" fill="none" stroke="#1b1340" stroke-width="4" stroke-linecap="round"/></svg>
+    </div>
+    <section class="section"><div class="wrap split">
+      <div><h2>Dari satu meja kecil</h2>
+        <p class="sub">Selimut Awan lahir dari hal sederhana: kami ingin punya tempat yang enak buat duduk lama. Bukan tempat yang bikin buru-buru pulang, tapi tempat yang bikin betah.</p>
+        <p class="sub">Biji kopi kami pilih dari petani lokal, kami seduh dengan teliti, dan kami sajikan dengan senyum. Soal kopinya serius, soal suasananya santai.</p>
+        <a class="btn big" href="#menu">Intip menu kami</a></div>
+      <div class="quote">“Kopi yang enak itu bagus. Kopi yang enak <span>diminum bareng teman</span> itu lebih bagus.”</div>
+    </div></section>
+    <section class="section"><div class="wrap"><h2>Yang kami pegang</h2>
+      <div class="grid3">
+        <div class="card"><div class="ico-tile" style="background:#5ee0b8"><svg viewBox="0 0 48 48"><g fill="#fff" stroke="#1b1340" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M24 40c-10-6-14-14-8-22 4-5 10-5 14-12 6 8 6 18 2 26-2 4-4 6-8 8z"/><path d="M24 40V22" fill="none"/></g></svg></div><h3>Bahan jujur</h3><p>Kopi dari petani lokal, susu segar, dan roti yang dipanggang setiap pagi.</p></div>
+        <div class="card"><div class="ico-tile" style="background:#ffd23f"><svg viewBox="0 0 48 48"><g fill="#fff" stroke="#1b1340" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M8 24a16 14 0 0 1 32 0v8H8z"/><path d="M12 32v8M36 32v8" fill="none"/></g></svg></div><h3>Tempat yang nyaman</h3><p>Kursi empuk, colokan banyak, wifi kencang. Mau kerja atau bengong, silakan.</p></div>
+        <div class="card"><div class="ico-tile" style="background:#ff8fc7"><svg viewBox="0 0 48 48"><g fill="#fff" stroke="#1b1340" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M24 40S8 30 8 19a8 8 0 0 1 16-3 8 8 0 0 1 16 3c0 11-16 21-16 21z"/></g></svg></div><h3>Ramah ke semua</h3><p>Pengunjung baru atau langganan lama, semua kami sapa dengan cara yang sama.</p></div>
+      </div></div></section>
+    <section class="section"><div class="wrap"><h2>Kenalan sama tim</h2>
+      <div class="grid3">
+        <div class="card person"><svg class="avatar" viewBox="0 0 96 96" aria-hidden="true"><circle cx="48" cy="48" r="44" fill="#ffd23f" stroke="#1b1340" stroke-width="4"/><circle cx="35" cy="42" r="5" fill="#1b1340"/><circle cx="61" cy="42" r="5" fill="#1b1340"/><circle cx="26" cy="56" r="6" fill="#ff9fb0" opacity=".8"/><circle cx="70" cy="56" r="6" fill="#ff9fb0" opacity=".8"/><path d="M34 62q14 14 28 0" fill="none" stroke="#1b1340" stroke-width="4" stroke-linecap="round"/></svg><h3>Bima</h3><small>Barista kepala</small></div>
+        <div class="card person"><svg class="avatar" viewBox="0 0 96 96" aria-hidden="true"><circle cx="48" cy="48" r="44" fill="#b69cff" stroke="#1b1340" stroke-width="4"/><circle cx="35" cy="42" r="5" fill="#1b1340"/><circle cx="61" cy="42" r="5" fill="#1b1340"/><circle cx="26" cy="56" r="6" fill="#ff9fb0" opacity=".8"/><circle cx="70" cy="56" r="6" fill="#ff9fb0" opacity=".8"/><path d="M34 62q14 12 28 0" fill="none" stroke="#1b1340" stroke-width="4" stroke-linecap="round"/></svg><h3>Nala</h3><small>Dapur dan kue</small></div>
+        <div class="card person"><svg class="avatar" viewBox="0 0 96 96" aria-hidden="true"><circle cx="48" cy="48" r="44" fill="#5ee0b8" stroke="#1b1340" stroke-width="4"/><circle cx="35" cy="42" r="5" fill="#1b1340"/><circle cx="61" cy="42" r="5" fill="#1b1340"/><circle cx="26" cy="56" r="6" fill="#ff9fb0" opacity=".8"/><circle cx="70" cy="56" r="6" fill="#ff9fb0" opacity=".8"/><path d="M32 60q16 18 32 0" fill="none" stroke="#1b1340" stroke-width="4" stroke-linecap="round"/></svg><h3>Raka</h3><small>Tuan rumah dan penjaga playlist</small></div>
+      </div></div></section>
+  </section>
+
+<section class="panel" id="menu" aria-labelledby="t-menu">
+    <div class="wrap phero">
+      <div>
+        <p class="sticker rise">dari yang pahit sampai yang manis</p>
+        <h2 class="ptitle rise" id="t-menu" style="--d:.08s">Mau pesan apa hari ini?</h2>
+        <p class="lead rise" style="--d:.16s">Pilih dulu, tambahkan ke pesanan, lalu kirim lewat WhatsApp. Gampang.</p>
+      </div>
+      <svg class="mascot" viewBox="0 0 200 200" aria-hidden="true">
+<g class="steam" fill="none" stroke="#1b1340" stroke-width="5" stroke-linecap="round" opacity=".55"><path d="M82 46q-8-10 0-20t0-18"/><path d="M108 44q-8-10 0-20t0-18" style="animation-delay:.8s"/></g>
+<ellipse cx="100" cy="182" rx="66" ry="8" fill="#1b1340" opacity=".18"/>
+<path d="M150 100q36 0 36 26t-38 26" fill="none" stroke="#1b1340" stroke-width="18" stroke-linecap="round"/>
+<path d="M150 100q36 0 36 26t-38 26" fill="none" stroke="#f04a3a" stroke-width="9" stroke-linecap="round"/>
+<path d="M48 82h104v46q0 46-52 46t-52-46z" fill="#f04a3a" stroke="#1b1340" stroke-width="4" stroke-linejoin="round"/>
+<ellipse cx="100" cy="82" rx="52" ry="11" fill="#5a2e22" stroke="#1b1340" stroke-width="4"/>
+<g class="eye"><circle cx="80" cy="128" r="11" fill="#fff" stroke="#1b1340" stroke-width="3"/><circle cx="82" cy="129" r="5" fill="#1b1340"/></g>
+<g class="eye"><circle cx="120" cy="128" r="11" fill="#fff" stroke="#1b1340" stroke-width="3"/><circle cx="122" cy="129" r="5" fill="#1b1340"/></g>
+<circle cx="66" cy="148" r="6" fill="#ff9fb0"/><circle cx="134" cy="148" r="6" fill="#ff9fb0"/>
+<path d="M89 147q11 18 22 0z" fill="#1b1340"/></svg>
+    </div>
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<symbol id="i-kopi" viewBox="0 0 48 48"><g fill="#fff" stroke="#1b1340" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h24v10a12 12 0 0 1-24 0z"/><path d="M33 21h3a5 5 0 0 1 0 10h-3" fill="none"/><path d="M16 8q-3 3 0 6M24 8q-3 3 0 6" fill="none"/></g></symbol>
+<symbol id="i-non" viewBox="0 0 48 48"><g fill="#fff" stroke="#1b1340" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M12 14h24l-3 27H15z"/><path d="M26 14l5-9M14 24h20" fill="none"/></g></symbol>
+<symbol id="i-makan" viewBox="0 0 48 48"><g fill="#fff" stroke="#1b1340" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M6 24h36a18 14 0 0 1-36 0z"/><path d="M17 12q-3 3 0 6M25 10q-3 3 0 6M33 12q-3 3 0 6" fill="none"/></g></symbol>
+<symbol id="i-camilan" viewBox="0 0 48 48"><g fill="#fff" stroke="#1b1340" stroke-width="3" stroke-linecap="round"><circle cx="24" cy="26" r="16"/><g fill="#1b1340" stroke="none"><circle cx="18" cy="22" r="2.2"/><circle cx="28" cy="20" r="2.2"/><circle cx="26" cy="31" r="2.2"/><circle cx="17" cy="32" r="2.2"/></g></g></symbol>
+</defs></svg>
+    <section class="section"><div class="wrap">
+      <div class="tabs" role="group" aria-label="Kategori menu">
+        <button class="tab" data-cat="semua" aria-pressed="true">Semua</button>
+        <button class="tab" data-cat="kopi" aria-pressed="false">Kopi</button>
+        <button class="tab" data-cat="non" aria-pressed="false">Non-kopi</button>
+        <button class="tab" data-cat="makan" aria-pressed="false">Makanan</button>
+        <button class="tab" data-cat="camilan" aria-pressed="false">Camilan</button>
+      </div>
+      <div class="menu-grid" id="menuGrid"></div>
+    </div></section>
+  </section>
+
+<section class="panel" id="galeri" aria-labelledby="t-galeri">
+    <div class="wrap phero">
+      <div>
+        <p class="sticker rise">intip suasananya</p>
+        <h2 class="ptitle rise" id="t-galeri" style="--d:.08s">Pojok-pojok favorit kami.</h2>
+        <p class="lead rise" style="--d:.16s">Klik salah satu untuk melihatnya lebih dekat.</p>
+      </div>
+      <svg class="mascot" viewBox="0 0 200 200" aria-hidden="true">
+<ellipse cx="100" cy="184" rx="60" ry="8" fill="#1b1340" opacity=".18"/>
+<circle cx="100" cy="100" r="76" fill="#ff8fc7" stroke="#1b1340" stroke-width="4"/>
+<circle cx="100" cy="100" r="26" fill="#fff4df" stroke="#1b1340" stroke-width="4"/>
+<g fill="#ffd23f" stroke="#1b1340" stroke-width="2"><rect x="46" y="84" width="16" height="6" rx="3" transform="rotate(-30 54 87)"/><rect x="138" y="128" width="16" height="6" rx="3" transform="rotate(35 146 131)"/></g>
+<g fill="#5ee0b8" stroke="#1b1340" stroke-width="2"><rect x="140" y="70" width="16" height="6" rx="3" transform="rotate(50 148 73)"/><rect x="58" y="132" width="16" height="6" rx="3" transform="rotate(-50 66 135)"/></g>
+<g class="eye"><circle cx="82" cy="56" r="5" fill="#1b1340"/></g><g class="eye"><circle cx="118" cy="56" r="5" fill="#1b1340"/></g>
+<path d="M88 154q12 10 24 0" fill="none" stroke="#1b1340" stroke-width="4" stroke-linecap="round"/></svg>
+    </div>
+    <section class="section"><div class="wrap"><div class="gallery" id="gallery"><button class="shot " style="--c:#ffd23f" aria-haspopup="dialog"><svg viewBox="0 0 200 200" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><circle cx="100" cy="100" r="64" fill="#fff4df" stroke="#1b1340" stroke-width="4" stroke-linejoin="round"/><circle cx="100" cy="100" r="50" fill="#8a5a44"/><path d="M100 132C66 108 74 78 100 94 126 78 134 108 100 132z" fill="#fff4df"/><path d="M164 92q22 0 22 14t-22 14" fill="none" stroke="#1b1340" stroke-width="4" stroke-linejoin="round"/></svg><span>Latte art</span></button><button class="shot " style="--c:#b69cff" aria-haspopup="dialog"><svg viewBox="0 0 200 200" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><path d="M20 130C20 70 74 50 100 72 126 50 180 70 180 130 160 114 144 120 130 134 116 118 84 118 70 134 56 120 40 114 20 130z" fill="#ffb347" stroke="#1b1340" stroke-width="4" stroke-linejoin="round"/><path d="M58 72q6 24 18 42M100 66v44M142 72q-8 22-18 40" fill="none" stroke="#d9822b" stroke-width="4" stroke-linecap="round"/></svg><span>Croissant pagi</span></button><button class="shot " style="--c:#5ee0b8" aria-haspopup="dialog"><svg viewBox="0 0 200 200" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><circle cx="74" cy="92" r="44" fill="#ff8fc7" stroke="#1b1340" stroke-width="4" stroke-linejoin="round"/><circle cx="74" cy="92" r="14" fill="#5ee0b8" stroke="#1b1340" stroke-width="4" stroke-linejoin="round"/><circle cx="130" cy="124" r="44" fill="#ffd23f" stroke="#1b1340" stroke-width="4" stroke-linejoin="round"/><circle cx="130" cy="124" r="14" fill="#5ee0b8" stroke="#1b1340" stroke-width="4" stroke-linejoin="round"/></svg><span>Donat warna-warni</span></button><button class="shot " style="--c:#ff8fc7" aria-haspopup="dialog"><svg viewBox="0 0 200 200" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><path d="M64 60h72l-10 110H74z" fill="#fff" stroke="#1b1340" stroke-width="4" stroke-linejoin="round"/><path d="M68 100h64l-6 70H74z" fill="#8a5a44"/><path d="M80 80h40l-2 20H82z" fill="#fff4df"/><path d="M110 60l22-34" fill="none" stroke="#1b1340" stroke-width="4" stroke-linejoin="round"/><rect x="84" y="108" width="16" height="16" rx="3" fill="#fff" opacity=".7"/><rect x="104" y="128" width="16" height="16" rx="3" fill="#fff" opacity=".7"/></svg><span>Es kopi dingin</span></button><button class="shot " style="--c:#ffd23f" aria-haspopup="dialog"><svg viewBox="0 0 200 200" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><path d="M100 120C60 120 40 80 52 50 80 56 98 84 100 120zM100 120C140 120 160 80 148 50 120 56 102 84 100 120zM100 120C92 90 96 60 100 36 104 60 108 90 100 120z" fill="#5ee0b8" stroke="#1b1340" stroke-width="4" stroke-linejoin="round"/><path d="M64 120h72l-8 56H72z" fill="#f04a3a" stroke="#1b1340" stroke-width="4" stroke-linejoin="round"/></svg><span>Pojok tanaman</span></button><button class="shot wide" style="--c:#5ee0b8" aria-haspopup="dialog"><svg viewBox="0 0 200 200" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect x="0" y="0" width="200" height="200" fill="#b69cff"/><rect x="50" y="26" width="100" height="120" rx="8" fill="#fff4df" stroke="#1b1340" stroke-width="4" stroke-linejoin="round"/><path d="M100 26v120M50 86h100" stroke="#1b1340" stroke-width="4" stroke-linejoin="round" fill="none"/><circle cx="124" cy="56" r="14" fill="#ffd23f" stroke="#1b1340" stroke-width="4" stroke-linejoin="round"/><path d="M60 126q10-14 20-4t20-6" fill="none" stroke="#5ee0b8" stroke-width="5" stroke-linecap="round"/><rect x="40" y="146" width="120" height="12" rx="4" fill="#f04a3a" stroke="#1b1340" stroke-width="4" stroke-linejoin="round"/></svg><span>Sore di dekat jendela</span></button><button class="shot " style="--c:#ff8fc7" aria-haspopup="dialog"><svg viewBox="0 0 200 200" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><g fill="#8a5a44" stroke="#1b1340" stroke-width="4" stroke-linejoin="round"><ellipse cx="70" cy="72" rx="30" ry="40" transform="rotate(-30 70 72)"/><ellipse cx="130" cy="96" rx="30" ry="40" transform="rotate(30 130 96)"/><ellipse cx="86" cy="140" rx="28" ry="38" transform="rotate(10 86 140)"/></g><g fill="none" stroke="#fff4df" stroke-width="4" stroke-linecap="round"><path d="M56 96q24-24 30-52"/><path d="M118 70q10 30 28 52"/><path d="M80 112q10 28 12 52"/></g></svg><span>Biji kopi pilihan</span></button></div></div></section>
+  </section>
+
+<section class="panel" id="lokasi" aria-labelledby="t-lokasi">
+    <div class="wrap phero">
+      <div>
+        <p class="sticker rise">mampir kapan saja</p>
+        <h2 class="ptitle rise" id="t-lokasi" style="--d:.08s">Ketemu di sini.</h2>
+        <p class="lead rise" style="--d:.16s">Pintu kami terbuka setiap hari. Datang saja, mejanya selalu ada.</p>
+      </div>
+      <svg class="mascot" viewBox="0 0 200 200" aria-hidden="true">
+<g class="steam" fill="none" stroke="#1b1340" stroke-width="5" stroke-linecap="round" opacity=".55"><path d="M82 46q-8-10 0-20t0-18"/><path d="M108 44q-8-10 0-20t0-18" style="animation-delay:.8s"/></g>
+<ellipse cx="100" cy="182" rx="66" ry="8" fill="#1b1340" opacity=".18"/>
+<path d="M150 100q36 0 36 26t-38 26" fill="none" stroke="#1b1340" stroke-width="18" stroke-linecap="round"/>
+<path d="M150 100q36 0 36 26t-38 26" fill="none" stroke="#5ee0b8" stroke-width="9" stroke-linecap="round"/>
+<path d="M48 82h104v46q0 46-52 46t-52-46z" fill="#5ee0b8" stroke="#1b1340" stroke-width="4" stroke-linejoin="round"/>
+<ellipse cx="100" cy="82" rx="52" ry="11" fill="#5a2e22" stroke="#1b1340" stroke-width="4"/>
+<g class="eye"><circle cx="80" cy="128" r="11" fill="#fff" stroke="#1b1340" stroke-width="3"/><circle cx="82" cy="129" r="5" fill="#1b1340"/></g>
+<g class="eye"><circle cx="120" cy="128" r="11" fill="#fff" stroke="#1b1340" stroke-width="3"/><circle cx="122" cy="129" r="5" fill="#1b1340"/></g>
+<circle cx="66" cy="148" r="6" fill="#ff9fb0"/><circle cx="134" cy="148" r="6" fill="#ff9fb0"/>
+<path d="M89 147q11 18 22 0z" fill="#1b1340"/></svg>
+    </div>
+    <section class="section"><div class="wrap split">
+      <div class="map"><svg viewBox="0 0 600 420" role="img" aria-label="Ilustrasi peta menuju Selimut Awan">
+<rect width="600" height="420" fill="#e8f6ef"/>
+<g fill="#b69cff" stroke="#1b1340" stroke-width="3"><rect x="30" y="30" width="150" height="110" rx="14"/><rect x="230" y="30" width="130" height="110" rx="14" fill="#ffd23f"/><rect x="420" y="30" width="150" height="110" rx="14"/><rect x="30" y="230" width="150" height="150" rx="14" fill="#ff8fc7"/><rect x="420" y="230" width="150" height="150" rx="14" fill="#5ee0b8"/></g>
+<g fill="#fff" stroke="#1b1340" stroke-width="3"><rect x="0" y="165" width="600" height="40"/><rect x="195" y="0" width="20" height="420"/><rect x="385" y="0" width="20" height="420"/></g>
+<path d="M0 185H600" stroke="#1b1340" stroke-width="3" stroke-dasharray="14 12"/>
+<rect x="230" y="230" width="130" height="150" rx="14" fill="#fff4df" stroke="#1b1340" stroke-width="3"/>
+<g class="pin"><path d="M295 258c-22 0-36 16-36 34 0 22 36 54 36 54s36-32 36-54c0-18-14-34-36-34z" fill="#f04a3a" stroke="#1b1340" stroke-width="4"/><circle cx="295" cy="292" r="13" fill="#fff4df" stroke="#1b1340" stroke-width="3"/></g>
+<text x="295" y="372" text-anchor="middle" font-family="Fredoka,sans-serif" font-size="22" font-weight="700" fill="#1b1340">Selimut Awan</text></svg></div>
+      <div class="stack">
+        <div class="card"><h3>Alamat</h3><p>Jl. Contoh No. 12<br>Kota Anda, Jawa Barat</p>
+          <p style="margin-top:14px"><a class="btn big" href="https://www.google.com/maps/search/?api=1&amp;query=Selimut+Awan" target="_blank" rel="noopener">Buka di Google Maps</a></p></div>
+        <div class="card"><h3>Jam buka</h3>
+          <p class="status"><span class="dot" id="openDot"></span><span id="openNow">Buka setiap hari</span></p>
+          <ul class="hours-list" id="hoursList"><li data-day="1"><span>Senin</span><span>08.00 – 22.00</span></li><li data-day="2"><span>Selasa</span><span>08.00 – 22.00</span></li><li data-day="3"><span>Rabu</span><span>08.00 – 22.00</span></li><li data-day="4"><span>Kamis</span><span>08.00 – 22.00</span></li><li data-day="5"><span>Jumat</span><span>08.00 – 22.00</span></li><li data-day="6"><span>Sabtu</span><span>08.00 – 22.00</span></li><li data-day="0"><span>Minggu</span><span>08.00 – 22.00</span></li></ul>
+          <p style="margin-top:10px;font-size:14px">Dapur menerima pesanan sampai 21.00.</p></div>
+        <div class="card"><h3>Cara ke sini</h3><p>Parkir motor dan mobil ada di depan cafe. Kalau naik kendaraan umum, turun di halte terdekat lalu jalan kaki sebentar.</p></div>
+      </div>
+    </div></section>
+  </section>
+
+<section class="panel" id="kontak" aria-labelledby="t-kontak">
+    <div class="wrap phero">
+      <div>
+        <p class="sticker rise">ngobrol sama kami</p>
+        <h2 class="ptitle rise" id="t-kontak" style="--d:.08s">Ada yang mau ditanyakan?</h2>
+        <p class="lead rise" style="--d:.16s">Tulis saja. Kami balas secepat yang kami bisa, biasanya sambil menyeduh.</p>
+      </div>
+      <svg class="mascot" viewBox="0 0 200 200" aria-hidden="true">
+<ellipse cx="100" cy="184" rx="60" ry="8" fill="#1b1340" opacity=".18"/>
+<circle cx="100" cy="100" r="76" fill="#b69cff" stroke="#1b1340" stroke-width="4"/>
+<circle cx="100" cy="100" r="26" fill="#fff4df" stroke="#1b1340" stroke-width="4"/>
+<g fill="#ffd23f" stroke="#1b1340" stroke-width="2"><rect x="46" y="84" width="16" height="6" rx="3" transform="rotate(-30 54 87)"/><rect x="138" y="128" width="16" height="6" rx="3" transform="rotate(35 146 131)"/></g>
+<g fill="#5ee0b8" stroke="#1b1340" stroke-width="2"><rect x="140" y="70" width="16" height="6" rx="3" transform="rotate(50 148 73)"/><rect x="58" y="132" width="16" height="6" rx="3" transform="rotate(-50 66 135)"/></g>
+<g class="eye"><circle cx="82" cy="56" r="5" fill="#1b1340"/></g><g class="eye"><circle cx="118" cy="56" r="5" fill="#1b1340"/></g>
+<path d="M88 154q12 10 24 0" fill="none" stroke="#1b1340" stroke-width="4" stroke-linecap="round"/></svg>
+    </div>
+    <section class="section"><div class="wrap split">
+      <div class="card"><h2 style="font-size:30px">Kirim pesan</h2>
+        <form id="contactForm" novalidate>
+          <div class="field"><label for="nama">Nama</label><input id="nama" name="nama" type="text" autocomplete="name" required><span class="err" id="err-nama" aria-live="polite"></span></div>
+          <div class="field"><label for="kontakmu">WhatsApp atau email</label><input id="kontakmu" name="kontak" type="text" autocomplete="email" required><span class="err" id="err-kontak" aria-live="polite"></span></div>
+          <div class="field"><label for="perlu">Keperluan</label><select id="perlu" name="perlu"><option>Reservasi meja</option><option>Pertanyaan</option><option>Acara atau kerja sama</option><option>Lainnya</option></select></div>
+          <div class="field"><label for="pesan">Pesan</label><textarea id="pesan" name="pesan" required></textarea><span class="err" id="err-pesan" aria-live="polite"></span></div>
+          <button class="btn big" type="submit">Kirim lewat WhatsApp</button>
+          <div class="ok" id="ok" role="status">Terima kasih! WhatsApp akan terbuka dengan pesanmu. Tinggal tekan kirim, ya.</div>
+        </form></div>
+      <div class="contact-cards">
+        <a href="https://wa.me/6281200000000" target="_blank" rel="noopener"><div class="card"><div class="ico-tile" style="background:#5ee0b8"><svg viewBox="0 0 48 48"><g fill="#fff" stroke="#1b1340" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M8 38l3-9a15 15 0 1 1 6 6z"/></g></svg></div><div><h3 style="margin:0">WhatsApp</h3><small>0812-0000-0000</small></div></div></a>
+        <a href="https://instagram.com/" target="_blank" rel="noopener"><div class="card"><div class="ico-tile" style="background:#ff8fc7"><svg viewBox="0 0 48 48"><g fill="#fff" stroke="#1b1340" stroke-width="3"><rect x="8" y="8" width="32" height="32" rx="10"/><circle cx="24" cy="24" r="8"/></g></svg></div><div><h3 style="margin:0">Instagram</h3><small>@instagram_cafe_kamu</small></div></div></a>
+        <a href="mailto:halo@contoh-cafe.example" target="_blank" rel="noopener"><div class="card"><div class="ico-tile" style="background:#ffd23f"><svg viewBox="0 0 48 48"><g fill="#fff" stroke="#1b1340" stroke-width="3" stroke-linejoin="round"><rect x="6" y="12" width="36" height="24" rx="5"/><path d="M8 15l16 12 16-12" fill="none"/></g></svg></div><div><h3 style="margin:0">Email</h3><small>halo@contoh-cafe.example</small></div></div></a>
+      </div>
+    </div></section>
+    <section class="section"><div class="wrap"><h2>Pertanyaan yang sering muncul</h2><details><summary>Bisa reservasi meja?</summary><p>Bisa. Tulis lewat formulir di halaman ini atau kirim pesan WhatsApp, sebutkan tanggal, jam, dan jumlah orang.</p></details><details><summary>Boleh kerja berjam-jam di sini?</summary><p>Boleh banget. Ada wifi kencang dan colokan di banyak meja. Kami cuma minta kamu tetap pesan sesekali, ya.</p></details><details><summary>Ada menu tanpa daging?</summary><p>Ada. Sandwich telur alpukat dan beberapa camilan cocok untuk vegetarian. Tanya kami kalau ragu.</p></details><details><summary>Bisa pesan untuk acara kecil?</summary><p>Bisa. Ceritakan kebutuhanmu lewat formulir dan kami kabari secepatnya.</p></details></div></section>
+  </section>
+  </main>
+
+  <footer class="foot"><div class="wrap">
+  <div class="foot-in">
+    <div><b>Selimut Awan</b><p>Ngopi santai, tanpa ribet.<br>Datang sendiri atau ramai-ramai, semua boleh.</p></div>
+    <div><b>Jelajah</b><a href="#beranda">Beranda</a><a href="#tentang">Tentang</a><a href="#menu">Menu</a><a href="#galeri">Galeri</a><a href="#lokasi">Lokasi</a><a href="#kontak">Kontak</a></div>
+    <div><b>Mampir</b><p>Setiap hari<br>08.00 – 22.00</p></div>
+  </div>
+  <p class="copy-line">© 2026 Selimut Awan. Dibuat dengan kopi dan sedikit gula.</p>
+</div></footer>
+</div>
+
+<div class="orderbar" id="orderbar"><span><b id="obCount">0 item</b> &nbsp;·&nbsp; <span id="obTotal">Rp 0</span></span><button class="btn" id="openOrder">Lihat pesanan</button></div>
+<dialog id="orderDlg" aria-labelledby="dlgTitle">
+  <h2 id="dlgTitle">Pesananmu</h2>
+  <ul class="lines" id="lines"></ul>
+  <div class="total"><span>Total</span><span id="dlgTotal">Rp 0</span></div>
+  <div class="field"><label for="who">Atas nama atau nomor meja (boleh dikosongkan)</label><input id="who" type="text" autocomplete="name"></div>
+  <div class="dlg-actions">
+    <a class="btn big" id="sendWA" href="#" target="_blank" rel="noopener">Kirim lewat WhatsApp</a>
+    <button class="btn alt" id="clearOrder">Kosongkan</button>
+    <button class="btn alt" id="closeDlg">Tutup</button>
+  </div>
+</dialog>
+<dialog class="lightbox" id="lightbox" aria-label="Tampilan besar"><div id="lbSlot"></div><button class="btn alt" id="lbClose">Tutup</button></dialog>
+
+<script src="script.js"></script>
+</body>
+</html>
